@@ -1,15 +1,16 @@
 {
-  "name": "application-name",
-  "version": "2.0.0",
-  "private": true,
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "server:start": "./node_modules/.bin/babel-node ./server",
-    "server:watch": "nodemon --exec babel-node -- ./server",
-    "clean": "./node_modules/.bin/rimraf ./compiled ./coverage ./build/dist",
-    "start": "node ./compiled/server",
-    "compile": "./node_modules/.bin/babel ./app -d ./compiled"
+    "lint": "eslint .",
+    "start": "nodemon --exec babel-node index.js",
+    "test": "mocha --require @babel/register tests/**/*test.js"
   },
-  "license": "Apache",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -17,7 +18,9 @@
     "lodash": "^4.17.15",
     "mongoose": "^5.6.9",
     "chai": "^4.2.0",
-    "mongoose-autopopulate": "^0.9.1",
+    "mongoose-autopopulate": "^0.9.1"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
@@ -33,7 +36,21 @@
     "sinon": "^7.4.1",
     "supertest": "^4.0.2"
   },
-  "engines": {
-    "node": "10.15.2"
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000,
+      "ENV": "DEV"
+    }
+  },
+  "mocha": {
+    "env": {
+      "ENV": "Test"
+    }
   }
 }

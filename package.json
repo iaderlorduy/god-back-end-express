@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon --exec babel-node server.js"
+    "start": "node server.js"
   },
   "license": "Apache",
   "dependencies": {
@@ -32,6 +32,6 @@
     "supertest": "^4.0.2"
   },
   "engines": {
-    "node": "10.14.1"
+    "node": "10.15.2"
   }
 }

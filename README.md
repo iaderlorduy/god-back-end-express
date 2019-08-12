@@ -6,6 +6,8 @@
 4. **Install [React developer tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and [Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)** in Chrome.
 5. **Run server.** - `npm start`
 
+the application will run in the http//localhost:4000
+
 
 ### Production Dependencies
 

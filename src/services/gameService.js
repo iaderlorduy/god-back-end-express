@@ -1,6 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable class-methods-use-this */
-
+import 'regenerator-runtime/runtime';
 import Game from '../models/gameModel';
 import Player from '../models/playerModel';
 

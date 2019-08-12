@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "express",
+      "script": "./src/index.js",
+      "watch": true,
+      "exec_interpreter": "babel-node",
+      "exec_mode": "fork"
+    }
+  ]
+}

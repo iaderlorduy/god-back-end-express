@@ -9,51 +9,28 @@
 
 ### Production Dependencies
 
-| **Dependency**   | **Use**                                              |
-| ---------------- | ---------------------------------------------------- |
-| immer            | Helper for working with immutable data               |
-| prop-types       | Declare types for props passed into React components |
-| react            | React library                                        |
-| react-dom        | React library for DOM rendering                      |
-| react-redux      | Connects React components to Redux                   |
-| react-router-dom | React library for routing                            |
-| react-toastify   | Display messages to the user                         |
-| redux            | Library for unidirectional data flows                |
-| redux-thunk      | Async redux library                                  |
-| reselect         | Memoize selectors for performance                    |
+| **Dependency**          | **Use**                                                                                     |
+| ----------------        | ------------------------------------------------------------------------------------------- |
+| body-parser             | Parse incoming request bodies in a middleware before your handlers                          |
+| cors                    | Providing a Connect/Express middleware, enable CORS with options.                           |
+| express                 | Framework for create API                                                                    |
+| lodash                  | A modern JavaScript utility library delivering modularity, performance & extras.            |
+| mongoose                | Mongoose provides a straight-forward, schema-based solution to model your application data  |
+| mongoose-autopopulate   | Pluging for populate the collections                                                        |  
+
 
 ### Development Dependencies
 
-| **Dependency**                  | **Use**                                                          |
-| ------------------------------- | ---------------------------------------------------------------- |
-| @babel/core                     | Transpiles modern JavaScript so it runs cross-browser            |
-| babel-eslint                    | Lint modern JavaScript via ESLint                                |
-| babel-loader                    | Add Babel support to Webpack                                     |
-| babel-preset-react-app          | Babel preset for working in React. Used by create-react-app too. |
-| css-loader                      | Read CSS files via Webpack                                       |
-| cssnano                         | Minify CSS                                                       |
-| enzyme                          | Simplified JavaScript Testing utilities for React                |
-| enzyme-adapter-react-16         | Configure Enzyme to work with React 16                           |
-| eslint                          | Lints JavaScript                                                 |
-| eslint-loader                   | Run ESLint via Webpack                                           |
-| eslint-plugin-import            | Advanced linting of ES6 imports                                  |
-| eslint-plugin-react             | Adds additional React-related rules to ESLint                    |
-| fetch-mock                      | Mock fetch calls                                                 |
-| html-webpack-plugin             | Generate HTML file via webpack                                   |
-| http-server                     | Lightweight HTTP server to serve the production build locally    |
-| jest                            | Automated testing framework                                      |
-| json-server                     | Quickly create mock API that simulates create, update, delete    |
-| mini-css-extract-plugin         | Extract imported CSS to a separate file via Webpack              |
-| node-fetch                      | Make HTTP calls via fetch using Node - Used by fetch-mock        |
-| npm-run-all                     | Display results of multiple commands on single command line      |
-| postcss-loader                  | Post-process CSS via Webpack                                     |
-| react-test-renderer             | Render React components for testing                              |
-| react-testing-library           | Test React components                                            |
-| redux-immutable-state-invariant | Warn when Redux state is mutated                                 |
-| redux-mock-store                | Mock Redux store for testing                                     |
-| rimraf                          | Delete files and folders                                         |
-| style-loader                    | Insert imported CSS into app via Webpack                         |
-| webpack                         | Bundler with plugin ecosystem and integrated dev server          |
-| webpack-bundle-analyzer         | Generate report of what's in the app's production bundle         |
-| webpack-cli                     | Run Webpack via the command line                                 |
-| webpack-dev-server              | Serve app via Webpack                                            |
+| **Dependency**                  | **Use**                                                                               |
+| ------------------------------- | --------------------------------------------------------------------------------------|
+| @babel/core                     | Transpiles modern JavaScript so it runs cross-browser                                 |
+| babel-eslint                    | Lint modern JavaScript via ESLint                                                     |
+| babel-loader                    | Add Babel support to Webpack                                                          |
+| eslint                          | Lints JavaScript                                                                      |
+| eslint-loader                   | Run ESLint via Webpack                                                                |
+| eslint-plugin-import            | Advanced linting of ES6 imports                                                       |
+| mocha                           | JavaScript test framework running on Node.js and in the browser                       |
+| nodemon                         | Helpers develop node.js automatic restar the app when file changes in the directory   |
+| should                          | Expressive, readable, framework-agnostic assertion library                            |
+| sinon                           | Standalone test spies, stubs and mocks for JavaScript                                 |
+| supertest                       | Provide a high-level abstraction for testing HTTP                                     |

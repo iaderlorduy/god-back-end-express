@@ -19,7 +19,7 @@ const db = mongoose.connect('mongodb://root:abc123@ds231242.mlab.com:31242/god',
   useNewUrlParser: true,
 });
 
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

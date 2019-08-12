@@ -1,4 +1,4 @@
-//import gameRouter from './routes/gameRouter';
+import gameRouter from './routes/gameRouter';
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -24,7 +24,7 @@ const port = process.env.PORT || 1337;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//app.use('/api', gameRouter);
+app.use('/api', gameRouter);
 
 app.get('/', (req, res) => {
     res.send('Welcome to my API!');

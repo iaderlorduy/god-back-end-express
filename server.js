@@ -1,5 +1,4 @@
-import gameRouter from './routes/gameRouter';
-
+const gameRouter = require('./routes/gameRouter')
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');

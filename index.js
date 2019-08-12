@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === 'development') {
     useNewUrlParser: true,
   });
 }
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 1337;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
